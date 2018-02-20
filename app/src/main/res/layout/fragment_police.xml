@@ -3,18 +3,20 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!--Red Layout-->
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
+        <!--Blue Layout-->
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
 
-            <!--Station1-->
+            <!--Green Layout-->
             <RelativeLayout
                 android:layout_width="150dp"
                 android:layout_height="150dp">
@@ -24,16 +26,68 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
 
-                <!--station2-->
+
 
             </RelativeLayout>
+
+
+            <!--Green Layout-->
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+
+                <ImageView
+                    android:src="@drawable/stution1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+
+            </RelativeLayout>
+
 
         </LinearLayout>
 
 
 
+        <!--Blue Layout-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
 
+            <!--Green Layout-->
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+
+                <ImageView
+                    android:src="@drawable/stution1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+
+            </RelativeLayout>
+
+
+            <!--Green Layout-->
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+
+                <ImageView
+                    android:src="@drawable/stution1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
 
     </LinearLayout>
 
