@@ -60,6 +60,7 @@
                 android:layout_height="@dimen/icon">
                 <!--station2-->
                 <ImageView
+                    android:id="@+id/imageViewStation2"
                     android:src="@drawable/station2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
@@ -67,6 +68,8 @@
 
                 <!--Title-->
                 <TextView
+                    android:clickable="true"
+                    android:id="@+id/textViewStation2"
                     android:layout_alignParentBottom="true"
                     android:padding="5dp"
                     android:gravity="center_horizontal"
@@ -101,12 +104,19 @@
                 android:layout_height="@dimen/icon">
              <!--station3-->
                 <ImageView
-                    android:src="@drawable/station3"
+                    android:id="@+id/imageViewStation3"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/station3" />
 
                 <!--Title-->
                 <TextView
+                    android:id="@+id/textViewStation3"
                     android:layout_alignParentBottom="true"
                     android:padding="5dp"
                     android:gravity="center_horizontal"
@@ -132,6 +142,7 @@
                 android:layout_height="@dimen/icon">
               <!--station4-->
                 <ImageView
+                    android:id="@+id/imageViewStation4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentLeft="true"
@@ -141,6 +152,7 @@
 
                 <!--Title-->
                 <TextView
+                    android:id="@+id/textViewStation4"
                     android:layout_alignParentBottom="true"
                     android:padding="5dp"
                     android:gravity="center_horizontal"
