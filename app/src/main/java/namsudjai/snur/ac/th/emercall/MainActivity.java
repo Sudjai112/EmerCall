@@ -8,7 +8,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
+import namsudjai.snur.ac.th.emercall.fragment.HospitalFragment;
 import namsudjai.snur.ac.th.emercall.fragment.MainFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,6 +27,38 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+//        police controller
+        TextView policeTextView = findViewById(R.id.txtpolice);
+        policeTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.contentMainFragment, new MainFragment()).commit();
+                drawerLayout.closeDrawers();
+            }
+        });
+
+
+
+
+
+//        Hospital Controller
+        TextView HospitalTextView = findViewById(R.id.txtHospital);
+        HospitalTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.contentMainFragment, new HospitalFragment()).commit();
+                drawerLayout.closeDrawers();
+            }
+        });
+
+
+//        Insurunce Controrell
+
+
+//        Exit Controrell
 
 //        Create Toolbar
         Toolbar toolbar = findViewById(R.id.toolbarMain);
